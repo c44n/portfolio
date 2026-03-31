@@ -1,3 +1,4 @@
-@use './app/scss/variables';
-@use './app/app.scss';
-@use './app/scss/header/index';
+@use './app/app.scss' as app-style;
+@use './app/scss/_variables' as variables-style;
+@use './app/scss/header/index' as header-style;
+@use './app/scss/hero/index' as hero-style;

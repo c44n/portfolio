@@ -1,0 +1,49 @@
+$primary-color: #0e5a4d;
+$white-color: #ffff;
+$dark-color: rgb(31, 31, 31);
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #ffff;
+    background: $dark-color;
+    background: linear-gradient(63deg, $dark-color, #0e5a4d 100%);
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+
+        &__text-wrapper {
+            text-align: center;
+
+            h1 {
+                font-size: 7.5rem;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+                font-weight: 500;
+                font-family: 'Fire_Code', Courier, monospace;
+            }
+        }
+
+        &__button-wrapper {
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+    .button {
+        padding: 9px;
+        background: none;
+        border: 1px solid white;
+        border-radius: 20px;
+        color: white;
+    }
+
+
+
+}
