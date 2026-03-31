@@ -8,7 +8,7 @@ $dark-color: rgb(31, 31, 31);
     align-items: center;
     color: #ffff;
     background: $dark-color;
-    background: linear-gradient(63deg, $dark-color, #0e5a4d 100%);
+    background: linear-gradient(30deg, $dark-color 40%, #0e5a4d 100%);
 
     &__inner {
         display: flex;
@@ -20,28 +20,29 @@ $dark-color: rgb(31, 31, 31);
             text-align: center;
 
             h1 {
-                font-size: 7.5rem;
+                font-size: 128px;
             }
 
             h2 {
-                font-size: 2.5rem;
-                font-weight: 500;
+                font-size: 40px;
+                font-weight: 400;
                 font-family: 'Fire_Code', Courier, monospace;
             }
         }
 
         &__button-wrapper {
             display: flex;
-            gap: 10px;
+            gap: 48px;
         }
     }
 
     .button {
-        padding: 9px;
+        padding: 1rem 1.5rem;
         background: none;
         border: 1px solid white;
-        border-radius: 20px;
-        color: white;
+        border-radius: 28px;
+        color: $white-color;
+        font-size: 18px;
     }
 
 
