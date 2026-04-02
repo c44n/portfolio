@@ -1,8 +1,6 @@
 @use '../../../../public/assets/styles/all-styles.scss' as all;
 
 .about {
-    padding-top: 100px;
-    padding-bottom: 50px;
 
     .inner {
         display: flex;
@@ -18,28 +16,9 @@
         }
 
         .card-wrapper {
-            width: 50%;
             margin-top: 100px;
 
-            h4 {
-                margin-bottom: 26px;
-            }
-
             .card {
-                display: flex;
-                flex-direction: column;
-                gap: 14px;
-                background-color: all.$primary-color-trans;
-                border: 1px solid all.$primary-light;
-                border-radius: 30px;
-                padding: 32px;
-                color: all.$white-color;
-                
-                h2 {
-                    font-size: 64px;
-                    color: all.$primary-light;
-                }
-
 
                 .desc-wrapper {
                     display: flex;
