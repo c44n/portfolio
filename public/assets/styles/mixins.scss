@@ -1,8 +1,5 @@
 // #region basics
-
-@mixin flx(){
-
-}
+@mixin flx() {}
 
 
 
@@ -12,7 +9,14 @@
 
 // #region buttons
 
-
+.button-light {
+    padding: 1rem 1.5rem;
+    background: none;
+    border: 1px solid white;
+    border-radius: 28px;
+    color: white;
+    font-size: 18px;
+}
 
 
 

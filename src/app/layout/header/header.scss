@@ -1,7 +1,4 @@
-$primary-color: #0e5a4d;
-$primary-light: #3DCFB6;
-$white-color: #ffff;
-$dark-color: rgb(31, 31, 31);
+@use '../../../../public/assets/styles/all-styles.scss' as all;
 
 header {
     position: absolute;
@@ -19,7 +16,7 @@ nav {
 
     ul {
         list-style: none;
-        color: $white-color;
+        color: all.$white-color;
     }
 }
 
@@ -39,10 +36,10 @@ nav {
         display: flex;
         column-gap: .3rem;
         padding: 5px;
-        border: 1px solid $primary-light;
+        border: 1px solid all.$primary-light;
         border-radius: 18px;
         width: 50px;
-        color: $white-color;
+        color: all.$white-color;
 
         &__lang_en {
             font-weight: bold;

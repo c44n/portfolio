@@ -1,6 +1,6 @@
+@use "../public/assets/styles/all-styles.scss" as all;
 @use './app/layout/header/header.scss' as header-style;
 @use './app/layout/hero/hero.scss' as hero-style;
-@use "../public/assets/styles/all-styles.scss" as all;
 
 
 body {
@@ -22,6 +22,6 @@ h6 {
 } */
 
 .container {
-    width: 1200px;
+    max-width: 1300px;
     margin: auto;
 }
