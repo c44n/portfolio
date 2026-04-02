@@ -1,4 +1,27 @@
-@use './app/app.scss' as app-style;
-@use './app/scss/_variables' as variables-style;
-@use './app/scss/header/index' as header-style;
-@use './app/scss/hero/index' as hero-style;
+@use './app/layout/header/header.scss' as header-style;
+@use './app/layout/hero/hero.scss' as hero-style;
+@use "../public/assets/styles/all-styles.scss" as all;
+
+
+body {
+    margin: 0;
+    font-family: 'Karla', Courier, monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+/* section {
+
+} */
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
