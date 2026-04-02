@@ -6,6 +6,7 @@
 body {
     margin: 0;
     font-family: 'Karla', Courier, monospace;
+    background-color: all.$dark-color;
 }
 
 h1,
@@ -17,9 +18,9 @@ h6 {
     margin: 0;
 }
 
-/* section {
-
-} */
+.sub-title {
+    color: all.$primary-light;
+}
 
 .container {
     max-width: 1300px;
