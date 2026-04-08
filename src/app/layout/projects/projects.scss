@@ -1,0 +1,34 @@
+@use '../../../../public/assets/styles/all-styles.scss' as all;
+
+.projects {
+
+
+    .inner {
+
+
+        h2 {
+            color: all.$primary-light;
+            font-size: 64px;
+        }
+
+        .projects-wrapper {
+            width: 70%;
+
+            .project {
+                border-top: 1px solid all.$primary-light;
+                border-bottom: 1px solid all.$primary-light;
+                padding: 40px 32px;
+
+                h3 {
+                    color: all.$white-color;
+                    font-size: 24px;
+                }
+
+                .separator {
+                    color: all.$primary-light;
+                }
+            }
+        }
+
+    }
+}
