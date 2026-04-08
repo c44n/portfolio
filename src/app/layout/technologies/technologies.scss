@@ -1,9 +1,26 @@
-.technolgies {
+@use '../../../../public/assets/styles/all-styles.scss' as all;
+
+.technologies {
 
     .inner {
-        display: flex;
-        flex-direction: row;
         gap: 80px;
 
+        .skillset-wrapper {
+            gap: 70px;
+            .skill {
+                gap: 8px;
+
+                h4 {
+                    font-family: 'Fire-Code', Courier, monospace;
+                    color: all.$white-color;
+                    font-weight: 400;
+                }
+
+                img {
+                    max-height: 64px;
+                    max-width: 64px;
+                }
+            }
+        }
     }
 }

@@ -31,9 +31,10 @@ section {
     margin: auto;
 }
 
+// #region Card
+
 .card-wrapper {
     width: 50%;
-    margin-top: 100px;
 
     h4 {
         margin-bottom: 26px;
@@ -55,3 +56,5 @@ section {
         }
     }
 }
+
+// End Region Card
