@@ -47,6 +47,10 @@ nav {
     padding-top: 1rem;
     padding-bottom: 1rem;
 
+    @include all.mobile {
+        display: none;
+    }
+
     .lang-nav-wrapper {
         display: flex;
         align-items: center;
@@ -76,6 +80,13 @@ nav {
             border: 1px solid all.$white-color;
         }
     }
+}
+
+.header_inner_mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 20px;
 }
 
 .logo_wrapper {
