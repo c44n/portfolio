@@ -2,6 +2,10 @@
 
 .about {
 
+    p {
+        font-size: 18px;
+    }
+
     .inner {
         display: flex;
         flex-direction: row;
@@ -17,12 +21,25 @@
 
         .card-wrapper {
             margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
 
             .card {
 
                 .desc-wrapper {
+                    color: rgba(255, 255, 255, 0.699);
                     display: flex;
                     gap: 24px;
+                    transition: .2s ease-in-out;
+
+                    &:hover {
+                        color: all.$white-color;
+                    }
+
+                    &__icon-wrapper {
+                        width: 50px;
+                    }
                 }
             }
         }
