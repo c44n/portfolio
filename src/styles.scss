@@ -50,6 +50,7 @@ section {
     .card {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         gap: 14px;
         background-color: all.$primary-color-trans;
         border: 1px solid all.$primary-light;
