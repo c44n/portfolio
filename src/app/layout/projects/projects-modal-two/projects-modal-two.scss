@@ -1,0 +1,153 @@
+@use '../../../../../public/assets/styles/all-styles.scss' as all;
+
+:host {
+    display: block;
+    background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
+    border-radius: 30px;
+    padding: 80px;
+}
+
+article {
+    width: 1200px;
+
+    header {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+
+        .btn_close_modal {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 6px;
+            box-sizing: border-box;
+
+            .btn_close_modal_img {
+                transition: .2s ease-in-out;
+            }
+
+            &:hover {
+
+                .btn_close_modal_img {
+                    scale: (1.25);
+                    filter: brightness(0) saturate(100%) invert(53%) sepia(62%) saturate(386%) hue-rotate(123deg) brightness(100%) contrast(83%);
+                }
+            }
+        }
+    }
+
+    .inner {
+        display: flex;
+
+        .left {
+            width: 50%;
+            color: all.$white-color;
+
+            .title-wrapper {
+                gap: 0;
+
+                h3 {
+                    font-size: 64px;
+                    font-weight: 700;
+                }
+
+                h4 {
+                    font-size: 128px;
+                    font-weight: 800;
+                    color: all.$primary-light;
+                    line-height: .9;
+                }
+            }
+
+            .modal_project_about {
+                font-size: 24px;
+                font-weight: 700;
+                color: all.$primary-light;
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+
+            .techset_wrapper {
+                display: flex;
+                gap: 24px;
+
+                .techset {
+                    display: flex;
+                    gap: 10px;
+
+                    img {
+                        filter: brightness(0) saturate(100%) invert(53%) sepia(62%) saturate(386%) hue-rotate(123deg) brightness(100%) contrast(83%);
+                        width: 26px;
+                    }
+                }
+            }
+        }
+
+        .right {
+            width: 50%;
+            text-align: end;
+            margin-top: 30px;
+
+            .img_modal {
+                width: 80%;
+                height: 350px;
+                border-radius: 30px;
+            }
+
+            .link-wrapper {
+                margin-top: 40px;
+                
+                a {
+                    text-decoration: none;
+                    color: all.$primary-light;
+                    transition: .2s ease-in-out;
+
+                    img {
+                        height: 13px;
+                    }
+
+                    &:hover {
+                        color: all.$white-color;
+                    }
+                }
+            }
+
+
+
+        }
+    }
+
+    .modal_btn_wrapper {
+        display: flex;
+        gap: 25px;
+
+        .modal_btn {
+            margin-top: 30px;
+            padding: 12px 25px;
+            border: 1px solid all.$white-color;
+            border-radius: 26px;
+            background: none;
+            color: all.$white-color;
+            font-size: 16px;
+            transition: .2s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                border: 1px solid all.$primary-light;
+                color: all.$primary-light;
+
+                .modal_btn_arrow {
+                    animation: modal_btn_arrow_hover .2s forwards linear;
+                }
+            }
+
+            .modal_btn_arrow {
+                height: 14px;
+                filter: brightness(0) saturate(100%) invert(53%) sepia(62%) saturate(386%) hue-rotate(123deg) brightness(100%) contrast(83%);
+                width: 26px;
+                transition: .2s ease-in-out;
+            }
+        }
+    }
+
+}

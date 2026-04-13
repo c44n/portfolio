@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { Dialog } from '@angular/cdk/dialog';
-import { ProjectsModal } from '../projects-modal/projects-modal';
+import { ProjectsModal } from './projects-modal/projects-modal';
 import { ProjectsModalTwo } from './projects-modal-two/projects-modal-two';
 
 @Component({
