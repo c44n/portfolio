@@ -1,0 +1,48 @@
+@use '../../../../public/assets/styles/all-styles.scss' as all;
+
+footer {
+    margin-top: 100px;
+    padding-bottom: 46px;
+
+    .inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo_wrapper {
+            img {
+                margin-bottom: 20px;
+            }
+
+            .text_wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+
+
+        .copyright {
+            font-family: 'Fire-Code', Courier, monospace;
+            font-size: 18px;
+            color: all.$primary-light;
+        }
+
+
+        .links_wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            a {
+                text-decoration: none;
+                color: all.$white-color;
+            }
+        }
+
+    }
+}
