@@ -20,6 +20,21 @@
     border-radius: 28px;
     color: var.$white-color;
     font-size: 18px;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+    
+
+    &:hover {
+        border: 1px solid var.$primary-light;
+        color: var.$primary-light;
+
+        .hero_btn {
+            display: inline-block;
+            animation: animated_button_hero_text .6s forwards linear;
+        }
+
+    }
 }
 
 // #endregion
