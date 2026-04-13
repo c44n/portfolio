@@ -1,0 +1,14 @@
+@use '../../../../public/assets/styles/all-styles.scss' as all;
+
+.references {
+
+    .inner {
+
+
+        h2 {
+            font-size: 32px;
+            color: all.$primary-light;
+            font-weight: 700;
+        }
+    }
+}
