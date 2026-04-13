@@ -9,10 +9,18 @@
         h2 {
             color: all.$primary-light;
             font-size: 64px;
+
+            @include all.mobile {
+                font-size: 55px;
+            }
         }
 
         .projects-wrapper {
             width: 70%;
+
+            @include all.mobile {
+                width: 100%;
+            }
 
             .project {
                 border-top: 1px solid all.$primary-light;
@@ -20,6 +28,13 @@
                 padding: 40px 32px;
                 transition: .2s ease-in-out;
                 cursor: pointer;
+
+                @include all.mobile {
+                    padding: 20px 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
 
                 .arrow_hover {
                     padding: 5px;
