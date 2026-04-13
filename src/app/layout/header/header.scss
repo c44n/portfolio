@@ -7,8 +7,8 @@ header {
 }
 
 nav {
-    font-family: 'Fire_Code', Courier, monospace;
-    
+    font-family: 'Fire-Code', Courier, monospace;
+
     li {
         display: inline-block;
         margin-left: 30px;
@@ -17,6 +17,10 @@ nav {
     ul {
         list-style: none;
         color: all.$white-color;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
@@ -34,15 +38,27 @@ nav {
 
     .language-wrapper {
         display: flex;
-        column-gap: .3rem;
-        padding: 5px;
         border: 1px solid all.$primary-light;
         border-radius: 18px;
-        width: 50px;
-        color: all.$white-color;
+        width: auto;
+        color: all.$primary-light;
+        transition: .4s ease-in-out;
 
-        &__lang_en {
+        .lang {
+            padding: 5px 12px;
+            border-radius: 18px;
+        }
+
+        .active {
+            color: all.$white-color;
             font-weight: bold;
+            background-color: all.$primary-light;
+        }
+
+        &:hover {
+            border: 1px solid all.$white-color;
         }
     }
+
+
 }
