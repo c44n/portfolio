@@ -161,6 +161,10 @@
                     height: 185px;
                     width: 1px;
                     background: all.$white-color;
+
+                    @include all.mobile {
+                        height: 110px;
+                    }
                 }
 
             }
