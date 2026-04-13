@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { Dialog } from '@angular/cdk/dialog';
 import { ProjectsModal } from '../projects-modal/projects-modal';
+import { ProjectsModalTwo } from './projects-modal-two/projects-modal-two';
 
 @Component({
   selector: 'app-projects',
@@ -12,6 +13,10 @@ export class Projects {
   private dialog = inject(Dialog);
   protected openModal() {
     this.dialog.open(ProjectsModal);
+  }
+
+  protected openModalTwo() {
+    this.dialog.open(ProjectsModalTwo);
   }
 
 }
