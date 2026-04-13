@@ -22,6 +22,10 @@ p {
 section {
     padding-top: 100px;
     padding-bottom: 50px;
+
+    @include all.mobile {
+        padding: 100px 20px 50px 20px;
+    }
 }
 
 .sub-title {
@@ -43,6 +47,11 @@ section {
     flex-direction: column;
     gap: 30px;
 
+    @include all.mobile {
+        margin: 0;
+        width: 100%;
+    }
+
     h4 {
         margin-bottom: 26px;
     }
@@ -59,9 +68,17 @@ section {
         color: all.$white-color;
         font-size: 18px;
 
+        @include all.mobile {
+            font-size: 16px;
+        }
+
         h2 {
             font-size: 64px;
             color: all.$primary-light;
+
+            @include all.mobile {
+                font-size: 56px;
+            }
         }
     }
 }
