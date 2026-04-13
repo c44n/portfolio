@@ -101,6 +101,21 @@
                 &__email {
                     writing-mode: sideways-lr;
                     text-orientation: mixed;
+                    cursor: default;
+                    transition: .5s ease-in-out;
+
+                    &:hover {
+                        color: all.$primary-light;
+                    }
+                }
+
+                .sm-icon {
+                    transition: .2s ease-in-out;
+
+                    &:hover {
+
+                        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(81deg) brightness(102%) contrast(102%);
+                    }
                 }
 
                 &__line {
