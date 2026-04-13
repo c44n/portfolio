@@ -4,6 +4,10 @@ footer {
     margin-top: 100px;
     padding-bottom: 46px;
 
+    @include all.mobile {
+        padding: 0 20px;
+    }
+
     .inner {
         display: flex;
         align-items: center;
@@ -30,6 +34,15 @@ footer {
             font-family: 'Fire-Code', Courier, monospace;
             font-size: 18px;
             color: all.$primary-light;
+
+            @include all.mobile {
+                width: 100%;
+                position: absolute;
+                margin-top: 220px;
+                padding-bottom: 20px;
+                text-align: center;
+                margin-left: -20px;
+            }
         }
 
 
