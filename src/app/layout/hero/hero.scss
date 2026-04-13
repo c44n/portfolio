@@ -8,6 +8,10 @@
     justify-content: center;
     overflow: hidden;
 
+    @include all.mobile {
+        flex-wrap: wrap;
+    }
+
     .hero-wrapper {
         position: absolute;
         bottom: 0;
@@ -19,23 +23,40 @@
         align-items: center;
         z-index: 9;
 
+        @include all.mobile {
+            height: 100dvh;
+        }
+
         &__title-wrapper {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 12px;
 
+            @include all.mobile {
+                margin-top: -100px;
+                margin-bottom: 50px;
+            }
+
             &__text-wrapper {
                 text-align: center;
 
                 h1 {
                     font-size: 128px;
+
+                    @include all.mobile {
+                        font-size: 50px;
+                    }
                 }
 
                 h2 {
                     font-size: 40px;
                     font-weight: 400;
                     font-family: 'Fire_Code', Courier, monospace;
+
+                    @include all.mobile {
+                        font-size: 24px;
+                    }
                 }
             }
 
@@ -43,6 +64,10 @@
                 display: flex;
                 gap: 48px;
                 margin-top: 30px;
+
+                @include all.mobile {
+                    gap: 20px;
+                }
             }
         }
 
@@ -55,6 +80,10 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-end;
+
+            @include all.mobile {
+                margin-top: 100px;
+            }
 
             &__left {
                 display: flex;
@@ -104,6 +133,10 @@
                     cursor: default;
                     transition: .5s ease-in-out;
 
+                    @include all.mobile {
+                        display: none;
+                    }
+
                     &:hover {
                         color: all.$primary-light;
                     }
@@ -115,6 +148,12 @@
                     &:hover {
 
                         filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(81deg) brightness(102%) contrast(102%);
+                    }
+                }
+
+                .sm-mail {
+                    @include all.desktop {
+                        display: none;
                     }
                 }
 
@@ -136,6 +175,10 @@
         transform: rotate(356deg);
         //filter: blur(1px); //überarbeiten
 
+        @include all.mobile {
+            bottom: 15px;
+        }
+
         ul {
             display: flex;
             gap: 100px;
@@ -146,6 +189,10 @@
             -moz-animation: animated-hero-text 25s linear infinite;
             -webkit-animation: animated-hero-text 25s linear infinite;
             animation: animated-hero-text 25s linear infinite;
+
+            @include all.mobile {
+                font-size: 16px;
+            }
 
             li {}
 

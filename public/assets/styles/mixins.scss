@@ -1,4 +1,5 @@
 @use 'variables' as var;
+@use 'media-queries' as mq;
 
 // #region basics
 @mixin flx() {}
@@ -23,7 +24,12 @@
     transition: .3s ease-in-out;
     overflow: hidden;
     cursor: pointer;
-    
+
+    @include mq.mobile {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+
 
     &:hover {
         border: 1px solid var.$primary-light;
