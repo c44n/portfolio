@@ -18,6 +18,21 @@
                 border-top: 1px solid all.$primary-light;
                 border-bottom: 1px solid all.$primary-light;
                 padding: 40px 32px;
+                transition: .2s ease-in-out;
+
+                .arrow_hover {
+                    padding: 5px;
+                    transition: .2s ease-in-out;
+                }
+
+                &:hover {
+                    background-color: all.$primary-color;
+
+                    .arrow_hover {
+                        background: url('../../../../public/assets/images/arrow_outward.svg') no-repeat;
+                        background-size: contain;
+                    }
+                }
 
                 h3 {
                     color: all.$white-color;
