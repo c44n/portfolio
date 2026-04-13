@@ -27,3 +27,9 @@
         transform: translateX(-100%);
     }
 }
+
+@keyframes modal_btn_arrow_hover {
+    to {
+		transform: translateY(-15%) translateX(20%);
+	}
+}

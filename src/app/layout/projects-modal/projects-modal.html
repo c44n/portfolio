@@ -1,13 +1,74 @@
 <article>
     <header>
-        <h2>Projekt Name</h2>
+        <button class="btn_close_modal" (click)="closeModal()">
+            <img class="btn_close_modal_img" src="../../../../assets/images/close_small.svg" alt="Close Modal">
+        </button>
     </header>
 
     <main>
+        <div class="inner">
+            <div class="left">
+                <div class="title-wrapper">
+                    <h4>01</h4>
+                    <h3>Join</h3>
+                </div>
 
+                <div class="modal_project_about">What is this project about?</div>
+
+                <p>
+                    Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions,
+                    assign users and categories.
+                </p>
+
+                <div class="techset_wrapper">
+                    <div class="techset">
+                        <img src="../../../../assets/images/css.svg" alt="Tech">
+                        <p>CSS</p>
+                    </div>
+
+                    <div class="techset">
+                        <img src="../../../../assets/images/html.svg" alt="Tech">
+                        <p>HTML</p>
+                    </div>
+
+                    <div class="techset">
+                        <img src="../../../../assets/images/superbase.svg" alt="Tech">
+                        <p>Superbase</p>
+                    </div>
+
+                    <div class="techset">
+                        <img src="../../../../assets/images/angular.svg" alt="Tech">
+                        <p>Angular</p>
+                    </div>
+
+                    <div class="techset">
+                        <img src="../../../../assets/images/typescript.svg" alt="Tech">
+                        <p>TypeScript</p>
+                    </div>
+                </div>
+
+                <div class="modal_btn_wrapper">
+                    <button class="modal_btn">GitHub <img class="modal_btn_arrow" src="../../../../assets/images/arrow_outward.svg"></button>
+                    <button class="modal_btn">Live Test <img class="modal_btn_arrow" src="../../../../assets/images/arrow_outward.svg"></button>
+                </div>
+
+            </div>
+
+            <div class="right">
+                <img class="img_modal" src="../../../../assets/images/join.jpg" alt="Project Preview Image">
+
+                <div class="link-wrapper">
+                    <a href="#">
+                        Next project 
+                        <img src="../../../../assets/images/arrow_forward.svg" alt="">
+                    </a>
+                </div>
+
+            </div>
+        </div>
     </main>
 
     <footer>
-        <button (click)="closeModal()">X</button>
+
     </footer>
 </article>
