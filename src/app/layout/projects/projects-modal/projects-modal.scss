@@ -33,6 +33,10 @@ article {
                     filter: brightness(0) saturate(100%) invert(53%) sepia(62%) saturate(386%) hue-rotate(123deg) brightness(100%) contrast(83%);
                 }
             }
+
+            &:focus-visible {
+                outline: none;
+            }
         }
     }
 

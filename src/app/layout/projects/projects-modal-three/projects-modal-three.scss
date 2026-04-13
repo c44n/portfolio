@@ -27,7 +27,6 @@ article {
             }
 
             &:hover {
-
                 .btn_close_modal_img {
                     scale: (1.25);
                     filter: brightness(0) saturate(100%) invert(53%) sepia(62%) saturate(386%) hue-rotate(123deg) brightness(100%) contrast(83%);
@@ -37,6 +36,8 @@ article {
             &:focus-visible {
                 outline: none;
             }
+
+
         }
     }
 
@@ -94,7 +95,6 @@ article {
 
             .img_modal {
                 width: 80%;
-                height: 350px;
                 border-radius: 30px;
             }
 
