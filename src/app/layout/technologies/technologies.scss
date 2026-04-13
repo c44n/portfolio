@@ -36,7 +36,7 @@
 
             @include all.mobile {
                 max-width: 100%;
-                gap: 30px;
+                gap: 20px;
             }
 
             .skill {
@@ -47,7 +47,7 @@
                 gap: 10px;
 
                 @include all.mobile {
-                    width: 90px;
+                    width: 79px;
                 }
 
                 h4 {
@@ -67,8 +67,8 @@
                     transition: .2s ease-in-out;
 
                     @include all.mobile {
-                        max-height: 60px;
-                        max-width: 60px;
+                        max-height: 40px;
+                        max-width: 40px;
                     }
 
                     &:hover {
