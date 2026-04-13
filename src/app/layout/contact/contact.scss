@@ -1,2 +1,109 @@
 @use '../../../../public/assets/styles/all-styles.scss' as all;
 
+.contact {
+
+
+    .inner {
+        gap: 20px;
+
+        h2 {
+            color: all.$primary-light;
+            font-size: 64px;
+        }
+
+        h3 {
+            color: all.$primary-light;
+            //font-size: 64px;
+        }
+
+        .desc {
+            width: 40%;
+
+            .desc-wrapper {
+                margin-top: 20px;
+                gap: 5px;
+
+                span {
+                    color: all.$primary-light;
+                }
+            }
+
+
+        }
+
+        .form {
+            width: 60%;
+
+
+            .form-control {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+                padding: 30px;
+                border-top: 2px solid all.$primary-color;
+                border-bottom: 1px solid all.$primary-color;
+            }
+
+            .form-control:hover {
+                border-top: 2px solid all.$primary-light;
+                border-bottom: 1px solid all.$primary-light;
+
+                input::placeholder {
+                    color: all.$white-color;
+                }
+            }
+
+            label {
+                font-family: 'Fira-Code', Courier, monospace;
+                font-weight: 600;
+                font-size: 24px;
+                color: all.$primary-light;
+            }
+
+            input {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border: 0;
+                background: none;
+                font-size: 16px;
+                color: all.$white-color;
+            }
+
+            input::placeholder {
+                color: #ffffffb9;
+            }
+
+            input:focus-visible {
+                outline: none;
+                color: all.$white-color;
+            }
+
+            .privacy-wrapper {
+                margin: 40px 0;
+                color: all.$white-color;
+
+                span {
+                    color: all.$primary-light;
+                }
+
+                input[type="checkbox" i] {
+                    background: black;
+                    border: 1px solid black;
+                }
+            }
+
+            button {
+                background: none;
+                padding: 10px 24px;
+                border: 1px solid #ffffff4d;
+                border-radius: 20px;
+                font-size: 16px;
+                font-weight: 100;
+                color: #ffffffa8;
+            }
+
+        }
+
+    }
+}
