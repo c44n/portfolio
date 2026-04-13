@@ -77,6 +77,11 @@
                     width: 30px;
                     justify-content: center;
                     align-items: center;
+
+                    .arrow_down {
+                        width: 10px;
+                        animation: hero_arrow_animation 2s infinite;
+                    }
                 }
             }
 
