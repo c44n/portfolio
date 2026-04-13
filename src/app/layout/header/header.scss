@@ -87,6 +87,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 22px 20px;
+
+    @include all.desktop {
+        display: none;
+    }
 }
 
 .logo_wrapper {
