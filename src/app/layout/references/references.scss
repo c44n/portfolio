@@ -10,5 +10,49 @@
             color: all.$primary-light;
             font-weight: 700;
         }
+
+        .references_wrapper {
+            position: relative;
+            margin: 80px auto;
+            width: 40%;
+
+            @include all.mobile {
+                width: 100%;
+            }
+
+            .quotes {
+                position: absolute;
+                top: -40px;
+                left: -50;
+
+                img {
+
+                }
+            }
+
+            .reference {
+                padding: 40px;
+                background: #3DCFB64D;
+                border: 1px solid all.$primary-light;
+                border-radius: 32px;
+
+                .reference_person_wrapper {
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    margin-top: 70px;
+
+                    .line {
+                        width: 45%;
+                        height: 3px;
+                        background: all.$white-color;
+                    }
+
+                    span {
+                        color: all.$white-color;
+                    }
+                }
+            }
+        }
     }
 }
