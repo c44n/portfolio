@@ -77,7 +77,29 @@
                     <h4 class="text-center">Scrum</h4>
                 </div>
 
-                <div class="skill">
+                <div class="skill" (mouseenter)="isOpen = true" (mouseleave)="isOpen = false" cdkOverlayOrigin
+                    #origin="cdkOverlayOrigin">
+
+                    <ng-template cdkConnectedOverlay [cdkConnectedOverlayOrigin]="origin"
+                        [cdkConnectedOverlayOpen]="isOpen" [cdkConnectedOverlayPositions]="overlayPositions" (detach)="isOpen = false">
+                        <div class="growth_wrapper">
+                            <div class="growth_content">
+                                <h4>I have a special <br>interest in learning</h4>
+                                <div class="tech_wrapper">
+                                    <div class="growth_tech_wrapper">
+                                        <img src="../../../../assets/images/react.svg" alt="react"
+                                            class="growth_tech_badge">
+                                        React
+                                    </div>
+                                    <div class="growth_tech_wrapper">
+                                        <img src="../../../../assets/images/vuejs.svg" alt="vue.js"
+                                            class="growth_tech_badge">
+                                        Vue.js
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
                     <img src="../../../../assets/images/mindset.svg" alt="">
                     <h4 class="text-center">Growth<br>mindset</h4>
                 </div>

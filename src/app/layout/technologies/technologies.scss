@@ -3,8 +3,6 @@
 .technologies {
     background: radial-gradient(22.43% 43.85% at 1.22% 52.45%, rgba(8, 70, 59, 0.3) 0%, #1C1C1C 100%);
 
-
-
     .inner {
         gap: 70px;
 
@@ -50,6 +48,12 @@
                     width: 79px;
                 }
 
+                .btn-growth {
+                    border: none;
+                    background: none;
+                    cursor: pointer;
+                }
+
                 h4 {
                     font-family: 'Fire-Code', Courier, monospace;
                     color: all.$white-color;
@@ -75,6 +79,49 @@
                         scale: 110%;
                     }
                 }
+            }
+        }
+    }
+}
+
+.growth_wrapper {
+    background-color: all.$white-color;
+    border-radius: 8px;
+    padding: 10px 30px;
+    transition: .225s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.651);
+
+    .growth_content {
+
+        h4 {
+            font-size: 16px;
+            font-weight: 400;
+            color: all.$primary-light;
+            text-align: center;
+        }
+
+        .tech_wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: 700;
+            color: all.$primary-light;
+            text-align: center;
+;
+
+            .growth_tech_wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    height: 32px;
+                    width: 32px;
+                }
+                        
             }
         }
     }
